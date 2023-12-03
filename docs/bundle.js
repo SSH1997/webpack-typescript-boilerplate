@@ -15,7 +15,7 @@
   \**********************/
 /***/ (() => {
 
-eval("var button = document.getElementById(\"button\");\nbutton.addEventListener(\"click\", function () {\n  alert(\"clicked!\");\n});\n\n//# sourceURL=webpack://myapp/./src/index.ts?");
+eval("var button = document.getElementById(\"button\");\nbutton.addEventListener(\"click\", function () {\n  alert(\"Hello\");\n});\n\n//# sourceURL=webpack://myapp/./src/index.ts?");
 
 /***/ })
 
