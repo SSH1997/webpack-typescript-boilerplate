@@ -4,5 +4,6 @@
     "moduleResolution": "Node", // 모듈 해석 Node
     "esModuleInterop": true, // commonJS 모듈을 ES6로 import
     "sourceMap": true // 디버깅 맵
-  }
+  },
+  "extends": "@tsconfig/svelte/tsconfig.json",
 }

@@ -1,5 +1,10 @@
-const button = document.getElementById("button");
+import "svelte";
+import ExecutionPage from "./svelte/Page.svelte";
 
-button.addEventListener("click", () => {
-  alert("Hello");
+new ExecutionPage({
+  target: document.body,
+
+  props: {
+    propsString: "Hello! Wolrd!",
+  },
 });

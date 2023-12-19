@@ -23,6 +23,13 @@ module.exports = {
           loader: "ts-loader",
         },
       },
+      {
+        test: /\.svelte$/,
+        use: {
+          loader: "svelte-loader",
+          options: require("./svelte.config"),
+        },
+      },
     ],
   },
   resolve: {
@@ -32,7 +39,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/index.html", // 템플릿 위치
-      favicon: "./src/favicon.ico"
+      favicon: "./src/favicon.ico",
     }),
   ],
   devServer: {
